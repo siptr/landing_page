@@ -1,0 +1,72 @@
+.btn-primary{
+    background: rgb(55, 131, 55);
+    border: 0;
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background: rgb(32, 78, 32);
+    border: 0;
+}
+
+.btn-secondary{
+    background: none;
+    border: 1px solid  rgb(92, 156, 92);
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(55, 131, 55);
+}
+
+.btn-secondary:hover{
+    background: none;
+    border: 1px solid rgb(32, 78, 32);
+    color: rgb(32, 78, 32);
+}
+
+.jumbotron{
+    background-image: url(images/menu.jpg);
+    background-size: cover;
+    height: 670px;
+    position: relative;
+    align-self: center;
+}
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4{
+    color: white;
+    margin-top: 300px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    margin-bottom: 20px;
+    font-weight: 200;
+    z-index: 100;
+    position: relative;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+
+.jumbotron .btn-primary{
+    z-index: 100;
+    position: relative;
+    width: 300px;
+}
+
+@media only screen and (max-width: 768px) { 
+    .btn-primary, .btn-secondary{
+        margin-top: 15px;
+        margin-left: 0 !important;
+    }
+ }
